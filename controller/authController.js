@@ -66,7 +66,7 @@ export const loginController = async (req, res) => {
       }
 
       //token
-      const token = await JWT.sign({ _id: user._id }, proccess.env.JWT_SECRET, {
+      const token = await JWT.sign({ _id: user._id }, process.env.JWT_SECRET, {
           expiresIn: "7d",
           
       })
@@ -90,3 +90,10 @@ export const loginController = async (req, res) => {
     });
   }
 };
+
+//test routed
+
+export const testController = (req, res) => {
+  // console.log("protected routes");
+  res.send("protected routes");
+}
