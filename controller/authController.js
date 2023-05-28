@@ -5,12 +5,13 @@ export const registerController = async (req, res) => {
   try {
     const { name, email, password, phone, address } = req.body;
     if (!(name && email && password && phone && address)) {
-      return res.send({ error: "All field is required please fill" });
+      return res.send({ message: "All field is required please fill" });
     }
     const existinguser = await userModel.findOne({ email: email });
     if (existinguser) {
       return res.status(200).send({
-        success: true,
+        success: false,
+
         message: "Already Logined",
       });
     }
