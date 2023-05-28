@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 
 const Policy = () => {
   return (
-    <Layout>Policy</Layout>
+    <Layout title={"Policy-Gammavit-ShopNow"}>Policy</Layout>
   )
 }
 
