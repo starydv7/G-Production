@@ -5,7 +5,7 @@ const HomePage = () => {
   const [auth, setAuth] = useAuth();
   return (
       <Layout title={"BestOffers-Gammavit-ShopNow"}>
-      <h1>HomePage</h1>
+      <h1 style={{"marginTop":"100px"}}>HomePage</h1>
       <pre>{JSON.stringify(auth,null,4) }</pre>
       </Layout>
   )
