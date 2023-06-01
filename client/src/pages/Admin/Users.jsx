@@ -5,13 +5,20 @@ import Layout from "./../../components/Layout/Layout";
 const Users = () => {
   return (
     <Layout title={"Dashboard - All Users"}>
-      <div className="container-fluid m-3 p-3">
-        <div className="row">
-          <div className="col-md-3">
-            <AdminMenu />
-          </div>
-          <div className="col-md-9">
-            <h1>All Users</h1>
+      <div>
+        <div
+          className="container-fluid m-3 p-3"
+          style={{
+            marginTop: "100px",
+          }}
+        >
+          <div className="row">
+            <div className="col-md-3">
+              <AdminMenu />
+            </div>
+            <div className="col-md-9">
+              <h1 style={{ marginTop: "50px" }}>All Users</h1>
+            </div>
           </div>
         </div>
       </div>
