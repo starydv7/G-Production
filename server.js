@@ -23,6 +23,7 @@ app.use(morgan('dev'));
 //routes
 app.use("/api/v1/auth", authRoute)
 app.use("/api/v1/category", categoryRoute)
+
 app.use("/api/v1/products",productRoute)
 
 
