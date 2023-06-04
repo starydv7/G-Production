@@ -36,6 +36,7 @@ router.get("/product-photo/:pid", productPhotoController);
 //delete rproduct
 router.delete("/delete-product/:pid", deleteProductController);
 
+
 //filter product
 router.post("/product-filters", productFiltersController);
 
