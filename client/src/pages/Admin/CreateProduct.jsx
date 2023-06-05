@@ -169,6 +169,7 @@ const CreateProduct = () => {
                   CREATE PRODUCT
                 </button>
               </div>
+              
             </div>
           </div>
         </div>

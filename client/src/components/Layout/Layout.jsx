@@ -25,9 +25,9 @@ const Layout = ({ children, title, description, keywords, author }) => {
   );
 };
 Layout.defaultProps = {
-  title: "Gammavit Shop-Shop Now",
+  title: "Gammavit Shop Now",
   description: "Cosmatic Products",
-  keywords: "Cosmatic Products,fashwash,fash cleaner,vitaminC",
+  keywords: "Cosmatic Products,fashwash,fash cleaner,vitaminC,Hair,vitamin C fashwash",
   author: "Starydv7",
 };
 
