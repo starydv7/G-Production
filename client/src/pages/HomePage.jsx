@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
+import { Prices } from "../components/Prices";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -131,7 +132,7 @@ const HomePage = () => {
           </div>
           {/* price filter */}
           <h4 className="text-center mt-4">Filter By Price</h4>
-          {/* <div className="d-flex flex-column">
+          <div className="d-flex flex-column">
             <Radio.Group onChange={(e) => setRadio(e.target.value)}>
               {Prices?.map((p) => (
                 <div key={p._id}>
@@ -139,7 +140,7 @@ const HomePage = () => {
                 </div>
               ))}
             </Radio.Group>
-          </div> */}
+          </div>
           <div className="d-flex flex-column">
             <button
               className="btn btn-danger"
@@ -181,14 +182,14 @@ const HomePage = () => {
                     </button>
                     <button
                       className="btn btn-dark ms-1"
-                      onClick={() => {
-                        setCart([...cart, p]);
-                        localStorage.setItem(
-                          "cart",
-                          JSON.stringify([...cart, p])
-                        );
-                        toast.success("Item Added to cart");
-                      }}
+                      // onClick={() => {
+                      //   setCart([...cart, p]);
+                      //   localStorage.setItem(
+                      //     "cart",
+                      //     JSON.stringify([...cart, p])
+                      //   );
+                      //   toast.success("Item Added to cart");
+                     // }}
                     >
                       ADD TO CART
                     </button>
