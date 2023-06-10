@@ -85,6 +85,7 @@ export const getSingleProductController = async (req, res) => {
       success: true,
       message: "Single Product Fetched",
       product,
+      
     });
   } catch (error) {
     console.log(error);

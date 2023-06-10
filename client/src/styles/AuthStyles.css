@@ -70,3 +70,30 @@
         max-width: 700px;
     }
 }
+@keyframes glowing {
+    0% {
+        background-color: rgba(13, 116, 235, 0.936);
+        box-shadow: 0 0 5px rgba(247, 147, 7, 0.2);
+    }
+
+    50% {
+        background-color: rgba(31, 75, 147, 0.4);
+        box-shadow: 0 0 20px #11f0b5ef;
+    }
+
+    100% {
+        background-color: rgba(55, 244, 17, 0.2);
+        box-shadow: 0 0 5px rgba(6, 27, 248, 0.2);
+    }
+}
+
+.btn-primary-glow {
+    animation: glowing 5s infinite;
+}
+.btn-primary-glow:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 5px rgba(6, 26, 248, 0.934);
+
+
+}

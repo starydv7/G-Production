@@ -74,7 +74,12 @@ const Login = () => {
               </button>
             </div>
 
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className={`btn btn-primary ${
+                email && password ? "btn-primary-glow" : ""
+              }`}
+            >
               Login
             </button>
           </form>

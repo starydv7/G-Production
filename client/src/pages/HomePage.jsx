@@ -165,7 +165,7 @@ const HomePage = () => {
                     <h5 className="card-title card-price">
                       {p.price.toLocaleString("en-US", {
                         style: "currency",
-                        currency: "USD",
+                        currency: "INR",
                       })}
                     </h5>
                   </div>
@@ -188,7 +188,7 @@ const HomePage = () => {
                           JSON.stringify([...cart, p])
                         );
                         toast.success("Item Added to cart");
-                     }}
+                      }}
                     >
                       ADD TO CART
                     </button>
