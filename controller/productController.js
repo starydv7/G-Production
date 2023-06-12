@@ -219,6 +219,7 @@ export const productCountController = async (req, res) => {
       error,
       success: false,
     });
+    
   }
 };
 
