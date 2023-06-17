@@ -18,5 +18,7 @@ export default function useCategory() {
     getCategories();
   }, []);
 
+  
+
   return categories;
 }
