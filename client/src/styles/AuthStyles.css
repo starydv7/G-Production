@@ -1,11 +1,11 @@
 
-.register-page {
+/* .register-page {
     display: grid;
     place-items: center;
     height: 100vh;
     background-color: #f1f3f6;
     background-image: url("../../public/images/Background.jpg");
-}
+} */
 
 .form-container {
     width: 100%;
