@@ -28,10 +28,13 @@ app.use(morgan("dev"));
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/category", categoryRoute);
 app.use("/api/v1/products", productRoute);
-app.use(express.static(path(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+// Handle all other routes
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-})
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 app.listen(PORT, () => {
   console.log(
     `server running on ${process.env.DEV_MODE} mode and on port ${PORT}`.bgCyan
